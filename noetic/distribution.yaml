@@ -12670,5 +12670,7 @@ repositories:
       url: https://github.com/ros-drivers/zbar_ros.git
       version: melodic-devel
     status: maintained
+tags:
+-  abb_driver
 type: distribution
 version: 2
