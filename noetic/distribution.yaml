@@ -130,10 +130,6 @@ repositories:
       version: master
     status: maintained
 tags:
--  abb_driver
--  abb_robot_driver_interfaces
--  ackermann_msgs
--  actionlib
--  agni_tf_tools
+-  custom-noetic
 type: distribution
 version: 2
