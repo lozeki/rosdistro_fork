@@ -4,7 +4,7 @@
 ---
 distributions:  
   noetic:
-    distribution: [noetic/distribution.yaml]
+    distribution: [noetic/distribution.yaml, noetic/my_distribution.yaml]
     distribution_cache: http://192.168.50.11/rosdistro_cache/noetic-cache.yaml.gz
     distribution_status: active
     distribution_type: ros1
