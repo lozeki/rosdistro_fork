@@ -1,0 +1,135 @@
+%YAML 1.1
+# ROS distribution file
+# see REP 143: http://ros.org/reps/rep-0143.html
+---
+release_platforms:
+  ubuntu:
+  - focal
+repositories:
+  abb_driver:
+    doc:
+      type: git
+      url: https://github.com/ros-industrial/abb_driver.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-industrial-release/abb_driver-release.git
+      version: 1.4.0-1
+    source:
+      type: git
+      url: https://github.com/ros-industrial/abb_driver.git
+      version: kinetic-devel
+    status: maintained
+  abb_robot_driver_interfaces:
+    doc:
+      type: git
+      url: https://github.com/ros-industrial/abb_robot_driver_interfaces.git
+      version: master
+    release:
+      packages:
+      - abb_egm_msgs
+      - abb_rapid_msgs
+      - abb_rapid_sm_addin_msgs
+      - abb_robot_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-industrial-release/abb_robot_driver_interfaces-release.git
+      version: 0.5.2-1
+    source:
+      type: git
+      url: https://github.com/ros-industrial/abb_robot_driver_interfaces.git
+      version: master
+    status: developed
+  ackermann_msgs:
+    doc:
+      type: git
+      url: https://github.com/ros-drivers/ackermann_msgs.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-drivers-gbp/ackermann_msgs-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/ros-drivers/ackermann_msgs.git
+      version: master
+    status: maintained
+  actionlib:
+    doc:
+      type: git
+      url: https://github.com/ros/actionlib.git
+      version: noetic-devel
+    release:
+      packages:
+      - actionlib
+      - actionlib_tools
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/actionlib-release.git
+      version: 1.14.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/actionlib.git
+      version: noetic-devel
+    status: maintained
+  agni_tf_tools:
+    doc:
+      type: git
+      url: https://github.com/ubi-agni/agni_tf_tools.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ubi-agni-gbp/agni_tf_tools-release.git
+      version: 0.1.6-1
+    source:
+      type: git
+      url: https://github.com/ubi-agni/agni_tf_tools.git
+      version: master
+    status: maintained
+  catkin:
+    doc:
+      type: git
+      url: https://github.com/ros/catkin.git
+      version: noetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/catkin-release.git
+      version: 0.8.10-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/catkin.git
+      version: noetic-devel
+    status: maintained
+  catkin_lint_cmake:
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/tue-robotics/catkin_lint_cmake.git
+      version: master
+    status: maintained
+  catkin_virtualenv:
+    doc:
+      type: git
+      url: https://github.com/locusrobotics/catkin_virtualenv.git
+      version: master
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/locusrobotics/catkin_virtualenv-release.git
+      version: 0.6.1-2
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/locusrobotics/catkin_virtualenv.git
+      version: master
+    status: maintained
+tags:
+- custom-noetic
+type: distribution
+version: 2
