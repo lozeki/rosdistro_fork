@@ -130,6 +130,6 @@ repositories:
       version: master
     status: maintained
 tags:
--  custom-noetic
+- custom-noetic
 type: distribution
 version: 2
