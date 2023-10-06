@@ -892,6 +892,6 @@ repositories:
       version: kinetic-devel
     status: maintained
 tags:
-- custom-noetic
+- kiwi-noetic
 type: distribution
 version: 2
