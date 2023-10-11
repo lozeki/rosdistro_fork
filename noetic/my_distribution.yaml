@@ -5,7 +5,22 @@
 release_platforms:
   ubuntu:
   - focal
-repositories:  
+repositories:
+  beginner_tutorials:
+    doc:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: noetic
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/lozeki/beginner_tutorials-release.git
+      version: 1.0.2-1
+    source:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: noetic
+    status: maintained
   angles:
     doc:
       type: git
