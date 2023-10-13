@@ -6,21 +6,6 @@ release_platforms:
   ubuntu:
   - focal
 repositories:
-  beginner_tutorials:
-    doc:
-      type: git
-      url: https://github.com/lozeki/beginner_tutorials.git
-      version: noetic
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/lozeki/beginner_tutorials-release.git
-      version: 1.0.2-1
-    source:
-      type: git
-      url: https://github.com/lozeki/beginner_tutorials.git
-      version: noetic
-    status: maintained
   angles:
     doc:
       type: git
@@ -37,6 +22,36 @@ repositories:
       url: https://github.com/ros/angles.git
       version: master
     status: maintained
+  beginner_tutorials:
+    doc:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: noetic
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/lozeki/beginner_tutorials-release.git
+      version: 1.0.3-1
+    source:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: noetic
+    status: maintained
+  behaviortree_cpp_v3:
+    doc:
+      type: git
+      url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
+      version: v3.8
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/BehaviorTree/behaviortree_cpp_v3-release.git
+      version: 3.8.5-1
+    source:
+      type: git
+      url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
+      version: v3.8
+    status: developed
   catkin:
     doc:
       type: git
@@ -53,70 +68,6 @@ repositories:
       url: https://github.com/ros/catkin.git
       version: noetic-devel
     status: maintained
-  ros_environment:
-    doc:
-      type: git
-      url: https://github.com/ros/ros_environment.git
-      version: noetic
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/ros_environment-release.git
-      version: 1.3.2-1
-    source:
-      type: git
-      url: https://github.com/ros/ros_environment.git
-      version: noetic
-    status: maintained
-  ros:
-    doc:
-      type: git
-      url: https://github.com/ros/ros.git
-      version: noetic-devel
-    release:
-      packages:
-      - mk
-      - ros
-      - rosbash
-      - rosboost_cfg
-      - rosbuild
-      - rosclean
-      - roscreate
-      - roslang
-      - roslib
-      - rosmake
-      - rosunit
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/ros-release.git
-      version: 1.15.8-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/ros.git
-      version: noetic-devel
-    status: maintained
-  image_transport_plugins:
-    doc:
-      type: git
-      url: https://github.com/ros-perception/image_transport_plugins.git
-      version: noetic-devel
-    release:
-      packages:
-      - compressed_depth_image_transport
-      - compressed_image_transport
-      - image_transport_plugins
-      - theora_image_transport
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/image_transport_plugins-release.git
-      version: 1.14.0-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros-perception/image_transport_plugins.git
-      version: noetic-devel
-    status: unmaintained
   cmake_modules:
     doc:
       type: git
@@ -132,37 +83,6 @@ repositories:
       type: git
       url: https://github.com/ros/cmake_modules.git
       version: 0.4-devel
-    status: maintained
-  dynamic_reconfigure:
-    doc:
-      type: git
-      url: https://github.com/ros/dynamic_reconfigure.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/dynamic_reconfigure-release.git
-      version: 1.7.3-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/dynamic_reconfigure.git
-      version: noetic-devel
-    status: maintained
-  ddynamic_reconfigure:
-    doc:
-      type: git
-      url: https://github.com/pal-robotics/ddynamic_reconfigure.git
-      version: kinetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/pal-gbp/ddynamic_reconfigure.git
-      version: 0.3.2-1
-    source:
-      type: git
-      url: https://github.com/pal-robotics/ddynamic_reconfigure.git
-      version: kinetic-devel
     status: maintained
   common_msgs:
     doc:
@@ -191,247 +111,20 @@ repositories:
       url: https://github.com/ros/common_msgs.git
       version: noetic-devel
     status: maintained
-  python_qt_binding:
+  ddynamic_reconfigure:
     doc:
       type: git
-      url: https://github.com/ros-visualization/python_qt_binding.git
-      version: melodic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/python_qt_binding-release.git
-      version: 0.4.4-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros-visualization/python_qt_binding.git
-      version: melodic-devel
-    status: maintained
-  laser_geometry:
-    doc:
-      type: git
-      url: https://github.com/ros-perception/laser_geometry.git
+      url: https://github.com/pal-robotics/ddynamic_reconfigure.git
       version: kinetic-devel
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/laser_geometry-release.git
-      version: 1.6.7-1
+      url: https://github.com/pal-gbp/ddynamic_reconfigure.git
+      version: 0.3.2-1
     source:
-      test_pull_requests: true
       type: git
-      url: https://github.com/ros-perception/laser_geometry.git
+      url: https://github.com/pal-robotics/ddynamic_reconfigure.git
       version: kinetic-devel
-    status: maintained
-  navigation_msgs:
-    doc:
-      type: git
-      url: https://github.com/ros-planning/navigation_msgs.git
-      version: ros1
-    release:
-      packages:
-      - map_msgs
-      - move_base_msgs
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/navigation_msgs-release.git
-      version: 1.14.1-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros-planning/navigation_msgs.git
-      version: ros1
-    status: maintained
-  ros_comm:
-    doc:
-      type: git
-      url: https://github.com/ros/ros_comm.git
-      version: noetic-devel
-    release:
-      packages:
-      - message_filters
-      - ros_comm
-      - rosbag
-      - rosbag_storage
-      - roscpp
-      - rosgraph
-      - roslaunch
-      - roslz4
-      - rosmaster
-      - rosmsg
-      - rosnode
-      - rosout
-      - rosparam
-      - rospy
-      - rosservice
-      - rostest
-      - rostopic
-      - roswtf
-      - topic_tools
-      - xmlrpcpp
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/ros_comm-release.git
-      version: 1.16.0-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/ros_comm.git
-      version: noetic-devel
-    status: maintained
-  resource_retriever:
-    doc:
-      type: git
-      url: https://github.com/ros/resource_retriever.git
-      version: kinetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/resource_retriever-release.git
-      version: 1.12.7-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/resource_retriever.git
-      version: kinetic-devel
-    status: maintained
-  message_generation:
-    doc:
-      type: git
-      url: https://github.com/ros/message_generation.git
-      version: kinetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/message_generation-release.git
-      version: 0.4.1-1
-    source:
-      type: git
-      url: https://github.com/ros/message_generation.git
-      version: kinetic-devel
-    status: maintained
-  message_runtime:
-    doc:
-      type: git
-      url: https://github.com/ros/message_runtime.git
-      version: kinetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/message_runtime-release.git
-      version: 0.4.13-1
-    source:
-      type: git
-      url: https://github.com/ros/message_runtime.git
-      version: kinetic-devel
-    status: maintained
-  pluginlib:
-    doc:
-      type: git
-      url: https://github.com/ros/pluginlib.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/pluginlib-release.git
-      version: 1.13.0-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/pluginlib.git
-      version: noetic-devel
-    status: maintained
-  rosconsole:
-    doc:
-      type: git
-      url: https://github.com/ros/rosconsole.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/rosconsole-release.git
-      version: 1.14.3-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/rosconsole.git
-      version: noetic-devel
-    status: maintained
-  std_msgs:
-    doc:
-      type: git
-      url: https://github.com/ros/std_msgs.git
-      version: kinetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/std_msgs-release.git
-      version: 0.5.13-1
-    source:
-      type: git
-      url: https://github.com/ros/std_msgs.git
-      version: kinetic-devel
-    status: maintained
-  geometry2:
-    doc:
-      type: git
-      url: https://github.com/ros/geometry2.git
-      version: noetic-devel
-    release:
-      packages:
-      - geometry2
-      - tf2
-      - tf2_bullet
-      - tf2_eigen
-      - tf2_geometry_msgs
-      - tf2_kdl
-      - tf2_msgs
-      - tf2_py
-      - tf2_ros
-      - tf2_sensor_msgs
-      - tf2_tools
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/geometry2-release.git
-      version: 0.7.6-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/geometry2.git
-      version: noetic-devel
-    status: maintained
-  navigation:
-    doc:
-      type: git
-      url: https://github.com/ros-planning/navigation.git
-      version: noetic-devel
-    release:
-      packages:
-      - amcl
-      - base_local_planner
-      - carrot_planner
-      - clear_costmap_recovery
-      - costmap_2d
-      - dwa_local_planner
-      - fake_localization
-      - global_planner
-      - map_server
-      - move_base
-      - move_slow_and_clear
-      - nav_core
-      - navfn
-      - navigation
-      - rotate_recovery
-      - voxel_grid
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/navigation-release.git
-      version: 1.17.3-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros-planning/navigation.git
-      version: noetic-devel
     status: maintained
   diagnostics:
     doc:
@@ -458,26 +151,20 @@ repositories:
       url: https://github.com/ros/diagnostics.git
       version: noetic-devel
     status: maintained
-  roscpp_core:
+  dynamic_reconfigure:
     doc:
       type: git
-      url: https://github.com/ros/roscpp_core.git
+      url: https://github.com/ros/dynamic_reconfigure.git
       version: noetic-devel
     release:
-      packages:
-      - cpp_common
-      - roscpp_core
-      - roscpp_serialization
-      - roscpp_traits
-      - rostime
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/roscpp_core-release.git
-      version: 0.7.3-1
+      url: https://github.com/ros-gbp/dynamic_reconfigure-release.git
+      version: 1.7.3-1
     source:
       test_pull_requests: true
       type: git
-      url: https://github.com/ros/roscpp_core.git
+      url: https://github.com/ros/dynamic_reconfigure.git
       version: noetic-devel
     status: maintained
   filters:
@@ -495,131 +182,6 @@ repositories:
       type: git
       url: https://github.com/ros/filters.git
       version: noetic-devel
-    status: maintained
-  geometry:
-    doc:
-      type: git
-      url: https://github.com/ros/geometry.git
-      version: noetic-devel
-    release:
-      packages:
-      - eigen_conversions
-      - geometry
-      - kdl_conversions
-      - tf
-      - tf_conversions
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/geometry-release.git
-      version: 1.13.2-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/geometry.git
-      version: noetic-devel
-    status: maintained
-  grid_map:
-    release:
-      packages:
-      - grid_map
-      - grid_map_core
-      - grid_map_costmap_2d
-      - grid_map_cv
-      - grid_map_demos
-      - grid_map_filters
-      - grid_map_loader
-      - grid_map_msgs
-      - grid_map_octomap
-      - grid_map_pcl
-      - grid_map_ros
-      - grid_map_rviz_plugin
-      - grid_map_sdf
-      - grid_map_visualization
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/anybotics/grid_map-release.git
-      version: 1.6.4-1
-    status: maintained
-  rviz:
-    doc:
-      type: git
-      url: https://github.com/ros-visualization/rviz.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/rviz-release.git
-      version: 1.14.20-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros-visualization/rviz.git
-      version: noetic-devel
-    status: maintained
-  behaviortree_cpp_v3:
-    doc:
-      type: git
-      url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
-      version: v3.8
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/BehaviorTree/behaviortree_cpp_v3-release.git
-      version: 3.8.5-1
-    source:
-      type: git
-      url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
-      version: v3.8
-    status: developed
-  geographic_info:
-    doc:
-      type: git
-      url: https://github.com/ros-geographic-info/geographic_info.git
-      version: master
-    release:
-      packages:
-      - geodesy
-      - geographic_info
-      - geographic_msgs
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-geographic-info/geographic_info-release.git
-      version: 0.5.6-1
-    source:
-      type: git
-      url: https://github.com/ros-geographic-info/geographic_info.git
-      version: master
-    status: maintained
-  unique_identifier:
-    release:
-      packages:
-      - unique_id
-      - unique_identifier
-      - uuid_msgs
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-geographic-info/unique_identifier-release.git
-      version: 1.0.6-1
-    status: maintained
-  gps_umd:
-    doc:
-      type: git
-      url: https://github.com/swri-robotics/gps_umd.git
-      version: master
-    release:
-      packages:
-      - gps_common
-      - gps_umd
-      - gpsd_client
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/swri-robotics-gbp/gps_umd-release.git
-      version: 0.3.4-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/swri-robotics/gps_umd.git
-      version: master
     status: maintained
   gencpp:
     doc:
@@ -710,6 +272,293 @@ repositories:
       url: https://github.com/ros/genpy.git
       version: main
     status: maintained
+  geographic_info:
+    doc:
+      type: git
+      url: https://github.com/ros-geographic-info/geographic_info.git
+      version: master
+    release:
+      packages:
+      - geodesy
+      - geographic_info
+      - geographic_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-geographic-info/geographic_info-release.git
+      version: 0.5.6-1
+    source:
+      type: git
+      url: https://github.com/ros-geographic-info/geographic_info.git
+      version: master
+    status: maintained
+  geometry:
+    doc:
+      type: git
+      url: https://github.com/ros/geometry.git
+      version: noetic-devel
+    release:
+      packages:
+      - eigen_conversions
+      - geometry
+      - kdl_conversions
+      - tf
+      - tf_conversions
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/geometry-release.git
+      version: 1.13.2-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/geometry.git
+      version: noetic-devel
+    status: maintained
+  geometry2:
+    doc:
+      type: git
+      url: https://github.com/ros/geometry2.git
+      version: noetic-devel
+    release:
+      packages:
+      - geometry2
+      - tf2
+      - tf2_bullet
+      - tf2_eigen
+      - tf2_geometry_msgs
+      - tf2_kdl
+      - tf2_msgs
+      - tf2_py
+      - tf2_ros
+      - tf2_sensor_msgs
+      - tf2_tools
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/geometry2-release.git
+      version: 0.7.6-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/geometry2.git
+      version: noetic-devel
+    status: maintained
+  gps_umd:
+    doc:
+      type: git
+      url: https://github.com/swri-robotics/gps_umd.git
+      version: master
+    release:
+      packages:
+      - gps_common
+      - gps_umd
+      - gpsd_client
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/swri-robotics-gbp/gps_umd-release.git
+      version: 0.3.4-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/swri-robotics/gps_umd.git
+      version: master
+    status: maintained
+  grid_map:
+    release:
+      packages:
+      - grid_map
+      - grid_map_core
+      - grid_map_costmap_2d
+      - grid_map_cv
+      - grid_map_demos
+      - grid_map_filters
+      - grid_map_loader
+      - grid_map_msgs
+      - grid_map_octomap
+      - grid_map_pcl
+      - grid_map_ros
+      - grid_map_rviz_plugin
+      - grid_map_sdf
+      - grid_map_visualization
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/anybotics/grid_map-release.git
+      version: 1.6.4-1
+    status: maintained
+  image_transport_plugins:
+    doc:
+      type: git
+      url: https://github.com/ros-perception/image_transport_plugins.git
+      version: noetic-devel
+    release:
+      packages:
+      - compressed_depth_image_transport
+      - compressed_image_transport
+      - image_transport_plugins
+      - theora_image_transport
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/image_transport_plugins-release.git
+      version: 1.14.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-perception/image_transport_plugins.git
+      version: noetic-devel
+    status: unmaintained
+  interactive_markers:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/interactive_markers.git
+      version: noetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/interactive_markers-release.git
+      version: 1.12.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-visualization/interactive_markers.git
+      version: noetic-devel
+    status: maintained
+  laser_geometry:
+    doc:
+      type: git
+      url: https://github.com/ros-perception/laser_geometry.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/laser_geometry-release.git
+      version: 1.6.7-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-perception/laser_geometry.git
+      version: kinetic-devel
+    status: maintained
+  media_export:
+    doc:
+      type: git
+      url: https://github.com/ros/media_export.git
+      version: indigo-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/media_export-release.git
+      version: 0.3.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/media_export.git
+      version: indigo-devel
+    status: maintained
+  message_generation:
+    doc:
+      type: git
+      url: https://github.com/ros/message_generation.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/message_generation-release.git
+      version: 0.4.1-1
+    source:
+      type: git
+      url: https://github.com/ros/message_generation.git
+      version: kinetic-devel
+    status: maintained
+  message_runtime:
+    doc:
+      type: git
+      url: https://github.com/ros/message_runtime.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/message_runtime-release.git
+      version: 0.4.13-1
+    source:
+      type: git
+      url: https://github.com/ros/message_runtime.git
+      version: kinetic-devel
+    status: maintained
+  metapackages:
+    doc:
+      type: git
+      url: https://github.com/ros/metapackages.git
+      version: noetic-devel
+    release:
+      packages:
+      - desktop
+      - desktop_full
+      - perception
+      - robot
+      - ros_base
+      - ros_core
+      - simulators
+      - viz
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/metapackages-release.git
+      version: 1.5.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/metapackages.git
+      version: noetic-devel
+    status: maintained
+  navigation:
+    doc:
+      type: git
+      url: https://github.com/ros-planning/navigation.git
+      version: noetic-devel
+    release:
+      packages:
+      - amcl
+      - base_local_planner
+      - carrot_planner
+      - clear_costmap_recovery
+      - costmap_2d
+      - dwa_local_planner
+      - fake_localization
+      - global_planner
+      - map_server
+      - move_base
+      - move_slow_and_clear
+      - nav_core
+      - navfn
+      - navigation
+      - rotate_recovery
+      - voxel_grid
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/navigation-release.git
+      version: 1.17.3-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-planning/navigation.git
+      version: noetic-devel
+    status: maintained
+  navigation_msgs:
+    doc:
+      type: git
+      url: https://github.com/ros-planning/navigation_msgs.git
+      version: ros1
+    release:
+      packages:
+      - map_msgs
+      - move_base_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/navigation_msgs-release.git
+      version: 1.14.1-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-planning/navigation_msgs.git
+      version: ros1
+    status: maintained
   octomap:
     doc:
       type: git
@@ -764,31 +613,159 @@ repositories:
       url: https://github.com/ros-perception/perception_pcl.git
       version: melodic-devel
     status: maintained
-  metapackages:
+  pluginlib:
     doc:
       type: git
-      url: https://github.com/ros/metapackages.git
+      url: https://github.com/ros/pluginlib.git
       version: noetic-devel
     release:
-      packages:
-      - desktop
-      - desktop_full
-      - perception
-      - robot
-      - ros_base
-      - ros_core
-      - simulators
-      - viz
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/metapackages-release.git
-      version: 1.5.0-1
+      url: https://github.com/ros-gbp/pluginlib-release.git
+      version: 1.13.0-1
     source:
       test_pull_requests: true
       type: git
-      url: https://github.com/ros/metapackages.git
+      url: https://github.com/ros/pluginlib.git
       version: noetic-devel
-    status: maintained    
+    status: maintained
+  python_qt_binding:
+    doc:
+      type: git
+      url: https://github.com/ros-visualization/python_qt_binding.git
+      version: melodic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/python_qt_binding-release.git
+      version: 0.4.4-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros-visualization/python_qt_binding.git
+      version: melodic-devel
+    status: maintained
+  resource_retriever:
+    doc:
+      type: git
+      url: https://github.com/ros/resource_retriever.git
+      version: kinetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/resource_retriever-release.git
+      version: 1.12.7-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/resource_retriever.git
+      version: kinetic-devel
+    status: maintained
+  ros:
+    doc:
+      type: git
+      url: https://github.com/ros/ros.git
+      version: noetic-devel
+    release:
+      packages:
+      - mk
+      - ros
+      - rosbash
+      - rosboost_cfg
+      - rosbuild
+      - rosclean
+      - roscreate
+      - roslang
+      - roslib
+      - rosmake
+      - rosunit
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/ros-release.git
+      version: 1.15.8-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/ros.git
+      version: noetic-devel
+    status: maintained
+  ros_comm:
+    doc:
+      type: git
+      url: https://github.com/ros/ros_comm.git
+      version: noetic-devel
+    release:
+      packages:
+      - message_filters
+      - ros_comm
+      - rosbag
+      - rosbag_storage
+      - roscpp
+      - rosgraph
+      - roslaunch
+      - roslz4
+      - rosmaster
+      - rosmsg
+      - rosnode
+      - rosout
+      - rosparam
+      - rospy
+      - rosservice
+      - rostest
+      - rostopic
+      - roswtf
+      - topic_tools
+      - xmlrpcpp
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/ros_comm-release.git
+      version: 1.16.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/ros_comm.git
+      version: noetic-devel
+    status: maintained
+  ros_comm_msgs:
+    doc:
+      type: git
+      url: https://github.com/ros/ros_comm_msgs.git
+      version: kinetic-devel
+    release:
+      packages:
+      - rosgraph_msgs
+      - std_srvs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/ros_comm_msgs-release.git
+      version: 1.11.3-1
+    source:
+      type: git
+      url: https://github.com/ros/ros_comm_msgs.git
+      version: kinetic-devel
+    status: maintained
+  ros_environment:
+    doc:
+      type: git
+      url: https://github.com/ros/ros_environment.git
+      version: noetic
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/ros_environment-release.git
+      version: 1.3.2-1
+    source:
+      type: git
+      url: https://github.com/ros/ros_environment.git
+      version: noetic
+    status: maintained
+  rosauth:
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/gt-rail-release/rosauth-release.git
+      version: 1.0.1-1
+    status: maintained
   rosbridge_suite:
     doc:
       type: git
@@ -810,12 +787,43 @@ repositories:
       url: https://github.com/RobotWebTools/rosbridge_suite.git
       version: ros1
     status: maintained
-  rosauth:
+  rosconsole:
+    doc:
+      type: git
+      url: https://github.com/ros/rosconsole.git
+      version: noetic-devel
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/gt-rail-release/rosauth-release.git
-      version: 1.0.1-1
+      url: https://github.com/ros-gbp/rosconsole-release.git
+      version: 1.14.3-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/rosconsole.git
+      version: noetic-devel
+    status: maintained
+  roscpp_core:
+    doc:
+      type: git
+      url: https://github.com/ros/roscpp_core.git
+      version: noetic-devel
+    release:
+      packages:
+      - cpp_common
+      - roscpp_core
+      - roscpp_serialization
+      - roscpp_traits
+      - rostime
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-gbp/roscpp_core-release.git
+      version: 0.7.3-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/ros/roscpp_core.git
+      version: noetic-devel
     status: maintained
   rqt:
     doc:
@@ -838,37 +846,47 @@ repositories:
       url: https://github.com/ros-visualization/rqt.git
       version: kinetic-devel
     status: maintained
-  interactive_markers:
+  rviz:
     doc:
       type: git
-      url: https://github.com/ros-visualization/interactive_markers.git
+      url: https://github.com/ros-visualization/rviz.git
       version: noetic-devel
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/interactive_markers-release.git
-      version: 1.12.0-1
+      url: https://github.com/ros-gbp/rviz-release.git
+      version: 1.14.20-1
     source:
       test_pull_requests: true
       type: git
-      url: https://github.com/ros-visualization/interactive_markers.git
+      url: https://github.com/ros-visualization/rviz.git
       version: noetic-devel
     status: maintained
-  media_export:
+  std_msgs:
     doc:
       type: git
-      url: https://github.com/ros/media_export.git
-      version: indigo-devel
+      url: https://github.com/ros/std_msgs.git
+      version: kinetic-devel
     release:
       tags:
         release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/media_export-release.git
-      version: 0.3.0-1
+      url: https://github.com/ros-gbp/std_msgs-release.git
+      version: 0.5.13-1
     source:
-      test_pull_requests: true
       type: git
-      url: https://github.com/ros/media_export.git
-      version: indigo-devel
+      url: https://github.com/ros/std_msgs.git
+      version: kinetic-devel
+    status: maintained
+  unique_identifier:
+    release:
+      packages:
+      - unique_id
+      - unique_identifier
+      - uuid_msgs
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://github.com/ros-geographic-info/unique_identifier-release.git
+      version: 1.0.6-1
     status: maintained
   urdf:
     doc:
@@ -887,24 +905,6 @@ repositories:
       type: git
       url: https://github.com/ros/urdf.git
       version: melodic-devel
-    status: maintained
-  ros_comm_msgs:
-    doc:
-      type: git
-      url: https://github.com/ros/ros_comm_msgs.git
-      version: kinetic-devel
-    release:
-      packages:
-      - rosgraph_msgs
-      - std_srvs
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/ros_comm_msgs-release.git
-      version: 1.11.3-1
-    source:
-      type: git
-      url: https://github.com/ros/ros_comm_msgs.git
-      version: kinetic-devel
     status: maintained
 tags:
 - kiwi-noetic
