@@ -23,6 +23,6 @@ repositories:
       version: noetic-devel
     status: maintained
 tags:
-- custom-noetic
+- gitlab-noetic
 type: distribution
 version: 2
