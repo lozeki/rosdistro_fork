@@ -15,7 +15,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin-release.git
-      version: 0.8.10-1
+      version: 0.8.12-1
     source:
       test_pull_requests: true
       type: git
