@@ -22,6 +22,33 @@ repositories:
       url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin.git
       version: noetic-devel
     status: maintained
+  bota_driver:
+    doc:
+      type: git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota_driver.git
+      version: master
+    release:
+      packages:
+      - bota_driver
+      - bota_driver_testing
+      - bota_node
+      - bota_signal_handler
+      - bota_worker
+      - rokubimini
+      - rokubimini_bus_manager
+      - rokubimini_description
+      - rokubimini_ethercat
+      - rokubimini_msgs
+      - rokubimini_serial
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-release-fork.git
+      version: 0.6.1-2
+    source:
+      type: git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota_driver.git
+      version: noetic-devel
+    status: developed
 tags:
 - gitlab-noetic
 type: distribution
