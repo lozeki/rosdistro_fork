@@ -6,22 +6,6 @@ release_platforms:
   ubuntu:
   - focal
 repositories:
-  catkin:
-    doc:
-      type: git
-      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin-release.git
-      version: 0.8.12-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin.git
-      version: noetic-devel
-    status: maintained
   bota_driver:
     doc:
       type: git
@@ -43,12 +27,28 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-release-fork.git
-      version: 0.6.1-2
+      version: 0.6.2-1
     source:
       type: git
       url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
       version: noetic-devel
     status: developed
+  catkin:
+    doc:
+      type: git
+      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin.git
+      version: noetic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin-release.git
+      version: 0.8.12-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: http://gitlab.halo.dekaresearch.com/kiwi/device/build/ros/catkin.git
+      version: noetic-devel
+    status: maintained
 tags:
 - gitlab-noetic
 type: distribution
