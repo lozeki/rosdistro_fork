@@ -25,7 +25,7 @@ repositories:
   bota_driver:
     doc:
       type: git
-      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota_driver.git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
       version: master
     release:
       packages:
@@ -46,7 +46,7 @@ repositories:
       version: 0.6.1-2
     source:
       type: git
-      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota_driver.git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
       version: noetic-devel
     status: developed
 tags:
