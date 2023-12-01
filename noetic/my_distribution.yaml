@@ -65,22 +65,6 @@ repositories:
       url: https://github.com/ros/angles.git
       version: master
     status: maintained
-  catkin:
-    doc:
-      type: git
-      url: https://github.com/ros/catkin.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/catkin-release.git
-      version: 0.8.10-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/catkin.git
-      version: noetic-devel
-    status: maintained
 tags:
 - custom-noetic
 type: distribution
