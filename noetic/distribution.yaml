@@ -570,34 +570,7 @@ repositories:
       type: git
       url: https://github.com/PickNikRobotics/boost_sml.git
       version: master
-    status: developed
-  bota_driver:
-    doc:
-      type: git
-      url: https://gitlab.com/botasys/bota_driver.git
-      version: master
-    release:
-      packages:
-      - bota_driver
-      - bota_driver_testing
-      - bota_node
-      - bota_signal_handler
-      - bota_worker
-      - rokubimini
-      - rokubimini_bus_manager
-      - rokubimini_description
-      - rokubimini_ethercat
-      - rokubimini_msgs
-      - rokubimini_serial
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://gitlab.com/botasys/bota_driver-release.git
-      version: 0.6.1-2
-    source:
-      type: git
-      url: https://gitlab.com/botasys/bota_driver.git
-      version: noetic-devel
-    status: developed
+    status: developed  
   calibration:
     doc:
       type: git
@@ -742,23 +715,7 @@ repositories:
       type: git
       url: https://github.com/AIS-Bonn/catch_ros.git
       version: master
-    status: maintained
-  catkin:
-    doc:
-      type: git
-      url: https://github.com/ros/catkin.git
-      version: noetic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/catkin-release.git
-      version: 0.8.10-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/ros/catkin.git
-      version: noetic-devel
-    status: maintained
+    status: maintained  
   catkin_lint_cmake:
     source:
       test_pull_requests: true
