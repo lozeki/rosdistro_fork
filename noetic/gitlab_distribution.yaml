@@ -43,7 +43,7 @@ repositories:
       tags:
         release: release/noetic/{package}/{version}
       url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-release-fork.git
-      version: 0.6.1-2
+      version: 0.6.2-1
     source:
       type: git
       url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
