@@ -6595,26 +6595,7 @@ repositories:
       type: git
       url: https://github.com/wg-perception/object_recognition_msgs.git
       version: noetic-devel
-    status: maintained
-  octomap:
-    doc:
-      type: git
-      url: https://github.com/OctoMap/octomap.git
-      version: devel
-    release:
-      packages:
-      - dynamic_edt_3d
-      - octomap
-      - octovis
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/octomap-release.git
-      version: 1.9.8-1
-    source:
-      type: git
-      url: https://github.com/OctoMap/octomap.git
-      version: devel
-    status: maintained
+    status: maintained  
   octomap_mapping:
     doc:
       type: git
@@ -6632,21 +6613,6 @@ repositories:
       type: git
       url: https://github.com/OctoMap/octomap_mapping.git
       version: kinetic-devel
-    status: maintained
-  octomap_msgs:
-    doc:
-      type: git
-      url: https://github.com/OctoMap/octomap_msgs.git
-      version: melodic-devel
-    release:
-      tags:
-        release: release/noetic/{package}/{version}
-      url: https://github.com/ros-gbp/octomap_msgs-release.git
-      version: 0.3.5-1
-    source:
-      type: git
-      url: https://github.com/OctoMap/octomap_msgs.git
-      version: melodic-devel
     status: maintained
   octomap_pa:
     doc:
