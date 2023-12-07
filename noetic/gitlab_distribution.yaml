@@ -22,33 +22,40 @@ repositories:
       url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/catkin.git
       version: noetic-devel
     status: maintained
-  bota_driver:
+  octomap:
     doc:
       type: git
-      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
-      version: master
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap.git
+      version: devel
     release:
       packages:
-      - bota_driver
-      - bota_driver_testing
-      - bota_node
-      - bota_signal_handler
-      - bota_worker
-      - rokubimini
-      - rokubimini_bus_manager
-      - rokubimini_description
-      - rokubimini_ethercat
-      - rokubimini_msgs
-      - rokubimini_serial
+      - dynamic_edt_3d
+      - octomap
+      - octovis
       tags:
         release: release/noetic/{package}/{version}
-      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-release-fork.git
-      version: 0.6.2-1
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap-release.git
+      version: 1.9.8-1
     source:
       type: git
-      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/bota-driver-fork.git
-      version: noetic-devel
-    status: developed
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap.git
+      version: devel
+    status: maintained
+  octomap_msgs:
+    doc:
+      type: git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap_msgs.git
+      version: melodic-devel
+    release:
+      tags:
+        release: release/noetic/{package}/{version}
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap_msgs-release.git
+      version: 0.3.5-1
+    source:
+      type: git
+      url: https://gitlab-prod.halo.halo-deka.com/kiwi/device/build/ros/octomap_msgs.git
+      version: melodic-devel
+    status: maintained
 tags:
 - gitlab-noetic
 type: distribution
