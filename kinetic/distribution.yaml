@@ -1065,6 +1065,22 @@ repositories:
       url: https://github.com/AutonomyLab/bebop_autonomy.git
       version: indigo-devel
     status: developed
+  beginner_tutorials:
+    doc:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: auto
+    release:
+      tags:
+        release: release/kinetic/{package}/{version}
+      url: https://github.com/lozeki/beginner_tutorials-release.git
+      version: 1.0.0-1
+    source:
+      type: git
+      url: https://github.com/lozeki/beginner_tutorials.git
+      version: auto
+    status: end-of-life
+    status_description: end-of-life
   behaviortree_cpp:
     doc:
       type: git
